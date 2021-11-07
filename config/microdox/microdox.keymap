@@ -1,6 +1,6 @@
 /*
-* west build -d build/left -b nice_nano -- -DSHIELD=microdox_left -DZMK_CONFIG="$HOME/Documents/Code/zmk-config/config"
-* west build -d build/right -b nice_nano -- -DSHIELD=microdox_right -DZMK_CONFIG="$HOME/Documents/Code/zmk-config/config"
+* west build -d build/microdox/left -b nice_nano_v2 -- -DSHIELD=microdox_left -DZMK_CONFIG="$HOME/Documents/Code/zmk-config/config/microdox"
+* west build -d build/microdox/right -b nice_nano_v2 -- -DSHIELD=microdox_right -DZMK_CONFIG="$HOME/Documents/Code/zmk-config/config/microdox"
 */
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -57,10 +57,10 @@
                 };
                 num_layer {
 // -----------------------------------------------------------------------------------------
-// |BTCLR|     |     |     |     |   |     |  7  |  8  |  9  |  0  |
-// | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |  4  |  5  |  6  |  /  |
-// | SFT |     |     |     |     |   |     |  1  |  2  |  3  |  .  |
-//             |     | ADJ |     |   |     |     |     |
+// |BTCLR|     |     |     |     |   |  7  |  8  |  9  |  0  |
+// | BT1 | BT2 | BT3 | BT4 | BT5 |   |  4  |  5  |  6  |  /  |
+// | SFT |     |     |     |     |   |  1  |  2  |  3  |  .  |
+//             |     | ADJ |     |   |     |     |
                         bindings = <
    &bt BT_CLR   &none        &none        &none        &none             &none  &kp N7 &kp N8 &kp N9 &kp N0
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &none  &kp N4 &kp N5 &kp N6 &kp FSLH
