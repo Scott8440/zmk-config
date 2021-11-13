@@ -11,6 +11,11 @@
     tapping-term-ms = <100>;
 };
 
+&kscan0 {
+    debounce-press-ms = <8>;
+    debounce-release-ms = <8>;
+};
+
 / {
         behaviors {
             hm: hm {
