@@ -17,6 +17,10 @@
 };
 
 / {
+        chosen {
+            zmk,matrix_transform = &skeletyl_transform;
+        };
+
         behaviors {
             hm: hm {
                 compatible = "zmk,behavior-hold-tap";
