@@ -13,4 +13,4 @@
 #
 ---
 board: [ "nice_nano_v2" ]
-shield: [ "microdox_left", "microdox_right", "tbkmini_left", "tbkmini_right" ]
+shield: [ "microdox_left", "microdox_right", "tbkmini_adapterv2_left", "tbkmini_adapterv2_right" ]
