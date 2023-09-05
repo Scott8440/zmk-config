@@ -59,19 +59,19 @@
             compatible = "zmk,combos";
 
             // left hand combos
-            combo_esc = {
+            combo_esc {
                 timeout_ms = <COMBO_FAST>;
                 key-positions = <LT3 LT1>;
                 bindings = <&kp ESC>;
                 global-quick-tap-ms = <150>;
             };
-            combo_ret = {
+            combo_ret {
                 timeout_ms = <COMBO_FAST>;
                 key-positions = <LT3 LT2>;
                 bindings = <&kp RET>;
                 global-quick-tap-ms = <150>;
             };
-            combo_tab = {
+            combo_tab {
                 timeout_ms = <COMBO_FAST>;
                 key-positions = <LT2 LT1>;
                 bindings = <&kp TAB>;
@@ -79,13 +79,13 @@
             };
 
             // right hand combos
-            combo_bspc = {
+            combo_bspc {
                 timeout_ms = <COMBO_FAST>;
                 key-positions = <RT1 RT2>;
                 bindings = <&kp BSPC>;
                 global-quick-tap-ms = <150>;
             };
-            combo_del = {
+            combo_del {
                 timeout_ms = <COMBO_FAST>;
                 key-positions = <RT2 RT3>;
                 bindings = <&kp DEL>;
