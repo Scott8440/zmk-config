@@ -8,7 +8,8 @@
 #define SYM 2
 #define ADJ 3
 
-#define COMBO_FAST 20
+#define COMBO_FAST 30
+#define COMBO_REJECT 100
 
 &lt {
     tapping-term-ms = <100>;
@@ -63,19 +64,19 @@
                 timeout-ms = <COMBO_FAST>;
                 key-positions = <LT3 LT1>;
                 bindings = <&kp ESC>;
-                global-quick-tap-ms = <150>;
+                global-quick-tap-ms = <COMBO_REJECT>;
             };
             combo_ret {
                 timeout-ms = <COMBO_FAST>;
                 key-positions = <LT3 LT2>;
                 bindings = <&kp RET>;
-                global-quick-tap-ms = <150>;
+                global-quick-tap-ms = <COMBO_REJECT>;
             };
             combo_tab {
                 timeout-ms = <COMBO_FAST>;
                 key-positions = <LT2 LT1>;
                 bindings = <&kp TAB>;
-                global-quick-tap-ms = <150>;
+                global-quick-tap-ms = <COMBO_REJECT>;
             };
 
             // right hand combos
@@ -83,13 +84,13 @@
                 timeout-ms = <COMBO_FAST>;
                 key-positions = <RT1 RT2>;
                 bindings = <&kp BSPC>;
-                global-quick-tap-ms = <150>;
+                global-quick-tap-ms = <COMBO_REJECT>;
             };
             combo_del {
                 timeout-ms = <COMBO_FAST>;
                 key-positions = <RT2 RT3>;
                 bindings = <&kp DEL>;
-                global-quick-tap-ms = <150>;
+                global-quick-tap-ms = <COMBO_REJECT>;
             };
         };
 
