@@ -20,8 +20,8 @@
 };
 
 &kscan0 {
-    debounce-press-ms = <6>;
-    debounce-release-ms = <6>;
+    debounce-press-ms = <2>;
+    debounce-release-ms = <10>;
 };
 
 /*                KEY POSITIONS
