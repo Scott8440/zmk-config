@@ -101,15 +101,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R   |  T  |   |  Y  |  U  |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F   |  G  |   |  H  |  J  |  K  |  L  |  ;  |
-// |  Z  |  X  |  C  |  V   |  B  |   |  N  |  M  |  ,  |  .  |  /  |
-//             | GUI | SHFT | SYM |   | NUM | SPC | ALT |
+// |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U  |  I  |  O  |  P  |
+// |  A  |  S  |  D  |  F  |  G   |   |  H  |  J  |  K  |  L  |  ;  |
+// |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M  |  ,  |  .  |  /  |
+//             | GUI | SYM | SHFT |   | SPC | NUM | ALT |
                         bindings = <
-   &kp Q       &kp W       &kp E         &kp R       &kp T        &kp Y       &kp U      &kp I        &kp O       &kp P
-   &kp A       &hm LCTRL S &hm LALT D    &hm LGUI F  &kp G        &kp H       &hm RGUI J &hm RALT K   &hm RCTRL L &kp SEMI
-   &hm LSHFT Z &kp X       &kp C         &kp V       &kp B        &kp N       &kp M      &kp COMMA    &kp DOT     &hm RSHFT FSLH
-                           &tm LGUI BSPC &kp LSHFT   &lt SYM ESC  &lt NUM RET &kp SPACE  &tm RALT TAB
+   &kp Q       &kp W       &kp E         &kp R       &kp T        &kp Y       &kp U       &kp I        &kp O       &kp P
+   &kp A       &hm LCTRL S &hm LALT D    &hm LGUI F  &kp G        &kp H       &hm RGUI J  &hm RALT K   &hm RCTRL L &kp SEMI
+   &hm LSHFT Z &kp X       &kp C         &kp V       &kp B        &kp N       &kp M       &kp COMMA    &kp DOT     &hm RSHFT FSLH
+                           &tm LGUI BSPC &lt SYM ESC &kp LSFT     &kp SPACE   &lt NUM RET &tm RALT TAB
                         >;
                 };
                 num_layer {
@@ -117,12 +117,12 @@
 // |BTCLR|     |     |     |     |   |  7  |  8  |  9  |  0  |
 // | BT1 | BT2 | BT3 | BT4 | BT5 |   |  4  |  5  |  6  |  /  |
 // | SFT |     |     |     |     |   |  1  |  2  |  3  |  .  |
-//             |     |     | ADJ |   |     |     |
+//             |     | ADJ |     |   |     |     |
                         bindings = <
    &bt BT_CLR   &none        &none        &none        &none         &none  &kp N7 &kp N8 &kp N9 &kp N0
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none  &kp N4 &kp N5 &kp N6 &kp FSLH
    &kp LSFT     &none        &none        &none        &none         &none  &kp N1 &kp N2 &kp N3 &kp DOT
-                             &trans       &trans       &mo ADJ       &trans &trans &trans
+                             &trans       &mo ADJ      &trans        &trans &trans &trans
                         >;
                 };
 
@@ -131,12 +131,12 @@
 // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  =  |
 // |  "  |  |  |  {  |  (  |  [  |   |  ]  |  )  |  }  |  \  |  '  |
 // |  ~  |  `  |     |     |     |   |     |     |     |  _  |  +  |
-//             |     |     |     |   | ADJ |     |     |
+//             |     |     |     |   |     | ADJ |     |
                         bindings = <
    &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT    &kp CARET &kp AMPS &kp KP_MULTIPLY &kp MINUS &kp EQUAL
    &kp DQT   &kp PIPE  &kp LBRC &kp LPAR &kp LBKT     &kp RBKT  &kp RPAR &kp RBRC        &kp BSLH  &kp SQT
    &kp TILDE &kp GRAVE &trans   &trans   &trans       &trans    &trans   &trans          &kp UNDER &kp PLUS
-                       &trans   &trans   &trans       &mo ADJ   &trans   &trans
+                       &trans   &trans   &trans       &trans    &mo ADJ  &trans
                         >;
                 };
 
