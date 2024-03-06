@@ -21,7 +21,7 @@
 
 &kscan0 {
     debounce-press-ms = <2>;
-    debounce-release-ms = <10>;
+    debounce-release-ms = <5>;
 };
 
 /*                KEY POSITIONS
