@@ -63,19 +63,19 @@
             // left hand combos
             combo_esc {
                 timeout-ms = <COMBO_FAST>;
-                key-positions = <LT3 LT1>;
+                key-positions = <LB3 LB1>;
                 bindings = <&kp ESC>;
                 require-prior-idle-ms = <COMBO_REJECT>;
             };
             combo_ret {
                 timeout-ms = <COMBO_FAST>;
-                key-positions = <LT3 LT2>;
+                key-positions = <LB3 LB2>;
                 bindings = <&kp RET>;
                 require-prior-idle-ms = <COMBO_REJECT>;
             };
             combo_tab {
                 timeout-ms = <COMBO_FAST>;
-                key-positions = <LT2 LT1>;
+                key-positions = <LB2 LB1>;
                 bindings = <&kp TAB>;
                 require-prior-idle-ms = <COMBO_REJECT>;
             };
@@ -83,13 +83,13 @@
             // right hand combos
             combo_bspc {
                 timeout-ms = <COMBO_FAST>;
-                key-positions = <RT1 RT2>;
+                key-positions = <RB1 RB2>;
                 bindings = <&kp BSPC>;
                 require-prior-idle-ms = <COMBO_REJECT>;
             };
             combo_del {
                 timeout-ms = <COMBO_FAST>;
-                key-positions = <RT2 RT3>;
+                key-positions = <RB2 RB3>;
                 bindings = <&kp DEL>;
                 require-prior-idle-ms = <COMBO_REJECT>;
             };
