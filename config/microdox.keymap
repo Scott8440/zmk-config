@@ -81,16 +81,28 @@
             };
 
             // right hand combos
-            combo_bspc {
+            // combo_bspc {
+            //     timeout-ms = <COMBO_FAST>;
+            //     key-positions = <RB1 RB2>;
+            //     bindings = <&kp BSPC>;
+            //     require-prior-idle-ms = <COMBO_REJECT>;
+            // };
+            // combo_del {
+            //     timeout-ms = <COMBO_FAST>;
+            //     key-positions = <RB2 RB3>;
+            //     bindings = <&kp DEL>;
+            //     require-prior-idle-ms = <COMBO_REJECT>;
+            // };
+            combo_scroll_up {
                 timeout-ms = <COMBO_FAST>;
-                key-positions = <RB1 RB2>;
-                bindings = <&kp BSPC>;
+                key-positions = <RT2 RT3>;
+                bindings = <&kp C_AC_SCROLL_UP>;
                 require-prior-idle-ms = <COMBO_REJECT>;
             };
-            combo_del {
+            combo_scroll_down {
                 timeout-ms = <COMBO_FAST>;
                 key-positions = <RB2 RB3>;
-                bindings = <&kp DEL>;
+                bindings = <&kp C_AC_SCROLL_DOWN>;
                 require-prior-idle-ms = <COMBO_REJECT>;
             };
         };
